@@ -1,0 +1,41 @@
+// This is reference file to test mongoose queries.
+
+
+go to current directry of the project 
+
+Charushis-MacBook-Pro:emailypractice charushisudhakar$
+
+then enter node --> will get the node execution 
+
+load all the import as in index.js
+
+const express =require('express');
+
+const mongoose = require('mongoose');
+const keys = require('./config/keys');
+
+const cookieSession= require('cookie-session');
+const passport =require('passport');
+const bodyParser= require('body-parser');
+
+require('./models/User');
+require('./models/Survey');
+require('./models/StockRecon');
+require('./services/passport'); 
+
+mongoose.Promise=global.Promise;
+mongoose.connect(keys.mongoosURI);
+
+const Survey=mongoose.model('surveys');
+Survey
+
+write the required queary like below
+
+Survey.find({}).then(console.log)
+
+Survey.find({title:'Thanks Route Testing'}).then(console.log)
+
+Survey.find({yes:0}).then(console.log)
+
+
+
