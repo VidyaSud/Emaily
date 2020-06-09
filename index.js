@@ -32,6 +32,7 @@ app.use(passport.session());
 require("./routes/authRoutes")(app);
 require("./routes/surveyRoutes")(app);
 require("./routes/stockReconroutes")(app);
+require("./routes/billingRoutes")(app);
 
 //the above code is the condensed code of below.
 // const authRoutes= require('./routes/authRoutes');

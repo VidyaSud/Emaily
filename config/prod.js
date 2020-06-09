@@ -6,6 +6,8 @@ module.exports = {
   sendGridKey:
     "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",
   redirectDomain: process.env.REDIRECT_DOMAIN,
+  strikePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
+  StripeSecreteKey: process.env.STRIPE_SECRETE_KEY,
 };
 
 //This file should be commited to GitHub because To run the application from Heroku thses connection keys are required
